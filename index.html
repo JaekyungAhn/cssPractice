@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Flag Project</title>
+  <style>
+    /* Write your CSS Code here */
+
+    body {
+      background-color: black;
+    }
+
+
+    .flag {
+      background-color: white;
+      width: 900px;
+      height: 600px;
+      position: relative;
+    }
+
+    p {
+      color: black;
+      text-align: center ;
+      font-size: 4rem;
+      padding : 0;
+      margin: 0;
+    }
+
+    .flag >div {
+      background-color: black;
+      position :absolute;
+      width : 200px;
+      height: 140px;
+    }
+
+    #topleft {
+      position :absolute;
+      top : 60px;
+      left : 40px;
+      transform: rotate(135deg);
+    }
+
+    #topright {
+      position :absolute;
+      top : 60px;
+      right: 40px;
+      transform: rotate(45deg);
+    }
+
+    #bottomleft {
+      position : absolute;
+      bottom : 60px;
+      left : 40px;
+      transform: rotate(45deg);
+    }
+
+    #bottomright {
+      position :absolute;
+      bottom : 60px;
+      right : 40px;
+      transform: rotate(135deg);
+    }
+
+    .whiteline {
+      background-color:whitesmoke;
+      position: relative;
+    }
+
+    .whiteline.horiline {
+      height: 10px;
+      width: 100%;
+    }
+
+    .whiteline.innerline {
+      width: 10px;
+      height: 40px;
+      position: absolute;
+      left: 95px;
+    }
+
+    .whiteline.horiline#line1 {
+      top : 90px;
+    }
+
+    .whiteline.horiline#line2 {
+      top : 30px;
+    }
+
+    .whiteline.innerline#inline1 {
+      top: 0px;
+    }
+    .whiteline.innerline#inline2 {
+      top: 50px;
+    }
+    .whiteline.innerline#inline3 {
+      top: 100px;
+    }
+
+    #centermark {
+      background-color: red;
+      position :absolute;
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      top : 150px;
+      left : 300px
+    }
+
+    #smallred {
+      background-color: rgb(255, 0, 0);
+      position :absolute;
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      top : 45px;
+      left :4.5px
+    }
+
+    #smallblue {
+      background-color: blue;
+      position :absolute;
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      bottom : 45px;
+      right : 4.5px;
+    }
+
+    #halfblue {
+      background-color: blue;
+      position :absolute;
+      width: 280px;
+      height: 150px;
+      border-radius: 0 0 140px 140px;
+      bottom : 0px;
+      right : 30.4px;      
+      transform: rotate(25deg);
+    }
+    
+  </style>
+</head>
+
+
+<body>
+  <div class="flag">
+
+    <div id = "topleft">
+      <div class = "whiteline horiline" id = "line1">
+      </div>
+      <div class = "whiteline horiline" id = "line2">
+      </div>      
+    </div>
+
+    <div id = "topright">
+      <div class = "whiteline horiline" id = "line1">
+      </div>
+      <div class = "whiteline horiline" id = "line2">
+      </div>
+      <div class= "whiteline innerline" id = "inline1">
+      </div>      
+      <div class= "whiteline innerline" id = "inline3">        
+      </div>
+    </div>
+
+    <div id = "bottomleft">
+      <div class = "whiteline horiline" id = "line1">
+      </div>
+      <div class = "whiteline horiline" id = "line2">
+      </div>      
+      <div class= "whiteline innerline" id = "inline2">
+      </div>
+    </div>
+
+    <div id = "bottomright">
+      <div class = "whiteline horiline" id = "line1">
+      </div>
+      <div class = "whiteline horiline" id = "line2">
+      </div>
+      <div class= "whiteline innerline" id = "inline1">
+      </div>
+      <div class= "whiteline innerline" id = "inline2">
+      </div>
+      <div class= "whiteline innerline" id = "inline3">
+      </div>
+    </div>
+
+    <div id = centermark>
+      <div id = halfblue>
+      </div>
+      <div id = smallred>
+      </div>
+      <div id = smallblue>        
+      </div>
+
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>
